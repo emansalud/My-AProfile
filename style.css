@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+.hero {
+    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 20px;
+    transition: transform 0.5s ease;
+    object-fit: cover;
+}
+
+.profile-img:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a, .back-btn {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    border: 1px solid white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.social-links a:hover, .back-btn:hover {
+    background: white;
+    color: #1e40af;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.content-section {
+    margin-bottom: 60px;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: #1e40af;
+    margin-bottom: 25px;
+    border-left: 5px solid #3b82f6;
+    padding-left: 15px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.skill-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.skill-card {
+    background: #f8fafc;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.skill-card:hover {
+    background: #1e40af;
+    transform: translateY(-5px);
+}
+
+.skill-name {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #1e40af;
+    display: block;
+    transition: opacity 0.3s;
+}
+
+.skill-description {
+    font-size: 0.9rem;
+    color: #64748b;
+    margin-top: 10px;
+    transition: opacity 0.3s;
+}
+
+.extra-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s;
+    width: 80%;
+    text-align: center;
+}
+
+.skill-card:hover .skill-name,
+.skill-card:hover .skill-description {
+    opacity: 0;
+}
+
+.skill-card:hover .extra-info {
+    opacity: 1;
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.gallery-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    border: 1px solid #e2e8f0;
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+    background-color: #f8fafc; 
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.gallery-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.gallery-card:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-info {
+    padding: 15px;
+    text-align: center;
+    border-top: 1px solid #f1f5f9;
+}
+
+
+.edu-item {
+    position: relative;
+    padding-left: 50px;
+    margin-bottom: 30px;
+    border-left: 2px solid #3b82f6;
+}
+
+.edu-icon {
+    position: absolute;
+    left: -15px;
+    top: 0;
+    background: #3b82f6;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+}
+
+.class-link {
+    text-decoration: none;
+    color: #4b5563;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.class-link:hover {
+    color: #D2691E;
+    text-decoration: underline;
+}
+
+.color-swatch:hover {
+    color: #FFD700;
+}
+
+.personal-details {
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #3b82f6;
+}
+
+.hobby-tag {
+    background: #e2e8f0;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.main-footer {
+    background: #111827;
+    color: #9ca3af;
+    text-align: center;
+    padding: 40px 20px;
+}
